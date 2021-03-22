@@ -59,28 +59,17 @@ _Implement the L1, L2, Huber losses_ (see ***Chapter 2***) _in three different f
 
   	- Use 90% of the sample length for the total training set and 10% for the testing set.
   	
-  	- Compute the training error (in-sample error, empirical error on a training set) using the implemented losses. Compute the Huber loss for different hyperparameters δ. 
+  	- Compute the training error (in-sample error, empirical error on a training set) using the implemented losses. Compute the Huber loss for the standard value of hyperparameter δ (look it up in the literature). 
 	
-	- Compute the testing error (out-of-sample error, empirical error on a testing set) using the implemented losses. Compute the Huber loss for different hyperparameters δ (the same as you took above). 
+	- Compute the testing error (out-of-sample error, empirical error on a testing set) using the implemented losses. Compute the Huber loss for the standard value of hyperparameter δ (look it up in the literature). 
 	
-	- Compute the LOOCV error and the k-fold cross-validation error (take k = 10, see the references in the beginning of Chapters 2 and 3) for L1, L2, and Huber loss. The LOOCV error for the case of L2 loss admits a shortcut expression (see Chapter 3). Compute the LOOCV error and the 10-fold cross-validation error based on Huber loss for different hyperparameters δ (the same as you took above).
+	- Compute the LOOCV error and the k-fold cross-validation error (take k = 10, see the references in the beginning of Chapters 2 and 3) for L1, L2, and Huber loss. The LOOCV error for the case of L2 loss admits a shortcut expression (see Chapter 3). 
 	
-	- Looking at LOOCV errors for the fine grid of different δ values (alternatively, running optimization with respect to LOOCV error as a function of δ) determine the best δ hyperparameter (we call it δ_opt).
-
-  	- Plots:
+  	- Plot:
   	
   		- Predicted fuel consumption values (regression line), predicted data points and ground-truth data points for the **training data**.
   	
   		- Predicted fuel consumption values (regression line) and ground-truth data points for the **test data**.
-		
-		- Huber loss based empirical error values for the **train data** for different hyperparameters δ.
-		
-		- Huber loss based empirical error values for the **test data** for different hyperparameters δ.
-		
-		- Huber loss based LOOCV error values for different hyperparameters δ. Mark the optimal δ_opt on this plot.
-		
-		- Huber loss based 10-fold CV error values for different hyperparameters δ.
-
 
 2. Construct an example of **multiple regression** using as predictors **gross horsepower** and **weight**.
 
@@ -97,7 +86,9 @@ _Implement the L1, L2, Huber losses_ (see ***Chapter 2***) _in three different f
 
 ## Notes ⚠️
 
-**Write your assignment code in the `main.m` file**: this is the script that has to contain the *core* of your assignment. 
+**Mind the normalization when you do the cross-validation**. 
+
+**Write your assignment code in the `assignment.ipynb` file**: this is the script that has to contain the *core* of your assignment. 
 
 Please *avoid creating unnecessary scripts/function files*, as this makes the code harder to grasp in its entirety.
 
