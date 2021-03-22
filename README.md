@@ -80,7 +80,7 @@ _Implement the L1, L2, Huber losses_ (see ***Chapter 2***) _in three different f
 	
 3. Implement predictor filtering for all possible predictors, make conclusions. Consider only the first 6 predictors (d = 6) in the dataset (cyl, disp, hp, drat, wt, qsec).
 
-4. Implement stepwise forward subset selection for all the d predictors. Plot the associated training errors for all the best resulting models with k predictors, k=0,1,...,d. For these best d+1 models compute the LOOCV L2 loss based empirical errors (using a shortcut formula) and comment which one achieves the lowest LOOCV error.
+4. Implement stepwise forward subset selection for all the d predictors. Plot the associated training errors for all the best resulting models with k predictors, k=0,1,...,d. Use the nested cross-validation in order to obtain the estimate of the statistical risk commited by the models and to select the best model.
   
 5. Compute the testing error for the **last 10%** of the dataset reserved as test data associated to the best model obtained with forward subset selection in the previous step. Compare the obtained testing error to the testing errors of the setups in part (1) and (2).
 
