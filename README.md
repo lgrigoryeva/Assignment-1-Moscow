@@ -94,8 +94,7 @@ You may create auxiliary modules but only if absolutely necessary. Please keep y
 
 **Good programming rules apply**:
 - Use meaningful variable names.
-- Comply with PEP8 or another reasonable style guide.
-- Keep your code tidy.
+- Comply with PEP8 or another reasonable common style guide.
 - Add a minimum of comments (if you deem them necessary) and if required in the task.
 
 <br>
