@@ -33,7 +33,7 @@ The dataset is already provided in `mtcars.csv`.
 - Write a function
 
 	```python
-	[train_sample, test_sample] = split_sample(sample, train_size, permute)
+	train_sample, test_sample = split_sample(sample, train_size, permute)
 	```
 
 	that splits the sample into a *training sample* and a *test sample*.
